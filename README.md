@@ -7,6 +7,19 @@
 
 #2.
 
+class add(int):
+   def __call__(self, n):
+      return add(self + n)
+
+
+class subtract(int): 
+   def __call__(self, n):
+      return subtract(self - n)
+
+
+#print(add(2)(3))
+#print(subtract(1)(3))
+
 
 
 #3.
