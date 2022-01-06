@@ -4,6 +4,49 @@
 #1.
 
 
+import json
+
+
+path = "./bread2.json"
+
+data = {}
+data['breadType'] = []
+data['breadType'].append({
+    "breadType" : "cream",
+    "recipe" : "",
+
+    "flour" : 100,
+    "water" : 100,
+    "cream" : 200
+
+})
+
+data['breadType'].append({
+    "breadType" : "sugar",
+    "recipe" : "",
+    
+    "flour" : 100,
+    "water" : 50,
+    "cream" : 200
+
+})
+
+data['breadType'].append({
+    "breadType" : "butter",
+    "recipe" : "",
+
+    "flour" : 100,
+    "water" : 100,
+    "cream" : 50
+
+})
+
+print(data)
+
+with open(path, 'w') as outfile:
+    json.dump(data, outfile, indent=4)
+
+
 
 #2.
 
